@@ -1,4 +1,4 @@
-# Call of Duty - Warzone Search App
+# Call of Duty - Warzone Search App - Imersão Dev com Google Gemini
 
 Bem-vindo ao nosso aplicativo de busca para Call of Duty - Warzone! 🎮✨
 
