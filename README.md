@@ -31,3 +31,6 @@ Se você deseja contribuir com melhorias ou adicionar novas funcionalidades, fiq
 ## Licença
 
 Este projeto é licenciado sob a [MIT License](LICENSE). Sinta-se à vontade para usar, modificar e compartilhar o código conforme desejar.
+
+Acesse a aplicação por aqui: [https://cod-navy.vercel.app/](https://cod-navy.vercel.app/)
+
