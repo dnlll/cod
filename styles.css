@@ -1,0 +1,284 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap');
+
+/* Estiliza o corpo da página */
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.7); /* Fundo escuro para contraste suave */
+    color: #f0f0f0; /* Texto suave e legível */
+    overflow-x: hidden; /* Evita rolagem horizontal */
+}
+
+/* Estiliza o vídeo como fundo */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Coloca o vídeo atrás de outros elementos */
+}
+
+/* Estiliza o header com fundo translúcido */
+header {
+    padding: 1rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo translúcido */
+    color: #f0f0f0; /* Texto claro para contraste */
+    position: relative;
+}
+
+/* Aplica fundo transparente no header */
+.tarja {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* Estiliza o botão Home no canto superior esquerdo */
+#home-button {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+}
+
+#home-button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Estiliza o título h1 */
+h1 {
+    font-size: 2.5rem;
+    color: #ffffff; /* Branco puro para destaque */
+    letter-spacing: 0.4rem;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 1); /* Adiciona sombra para legibilidade */
+}
+
+/* Estiliza o main */
+main {
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.3); /* Fundo translúcido para destacar o conteúdo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Estiliza a seção de pesquisa */
+.pesquisa {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 50rem;
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo translúcido leve */
+}
+
+/* Estiliza inputs e botões */
+input, button {
+    padding: 10px;
+    margin: 0 6px;
+    border-radius: 1.5rem;
+}
+
+/* Estiliza o input */
+input {
+    width: 70%;
+    border: none;
+    padding: 0.6rem;
+    font-size: 1rem;
+    color: #ffffff; /* Texto claro */
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo translúcido no input */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borda sutil */
+}
+
+/* Estiliza o botão */
+button {
+    padding: 0.6rem 0.8rem;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo translúcido leve */
+    color: #ffffff; /* Texto branco */
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Adiciona efeito hover ao botão */
+button:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* Cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Sombra leve */
+}
+
+/* Estiliza a seção de notícias */
+.noticias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Estiliza os artigos de notícias */
+.noticia {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.noticia h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.noticia img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.noticia p {
+    color: #d1d1d1;
+}
+
+.noticia a {
+    color: #F4D03F;
+    text-decoration: none;
+}
+
+.noticia a:hover {
+    text-decoration: underline;
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 50rem;
+    height: 50vh;
+    overflow-x: hidden;
+    padding: 24px;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo translúcido */
+}
+
+/* Adiciona esta regra para esconder a seção de resultados quando não estiver em uso */
+#resultados-pesquisa {
+    display: none; /* Inicialmente escondido */
+}
+
+/* Estiliza os itens de resultado */
+.item-resultado {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1); /* Fundo translúcido nos resultados */
+    border-radius: 0.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Estiliza os títulos h2 dos itens de resultado */
+.item-resultado h2 {
+    font-size: 1.5rem;
+    color: #ffffff; /* Texto claro */
+}
+
+/* Estiliza os links dos itens de resultado */
+.item-resultado a {
+    text-decoration: none;
+    color: #F4D03F; /* Amarelo suave para os links */
+}
+
+/* Adiciona sublinhado nos links ao passar o mouse */
+.item-resultado a:hover {
+    text-decoration: underline;
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: #d1d1d1; /* Cinza claro para descrição */
+    margin: 0.5rem 0;
+}
+
+/* Estiliza as logos do Twitch e YouTube */
+.twitch-logo, .youtube-logo {
+    width: 40px;
+    height: auto;
+    display: inline-block;
+    border-radius: 50%;
+    border: 2px solid #F4D03F; /* Borda amarela ao redor da logo */
+    margin-top: 0.5rem;
+}
+
+/* Estiliza o rodapé */
+footer {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo translúcido no rodapé */
+    color: #ffffff; /* Texto branco */
+    text-align: center;
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 0.7rem;
+    margin-top: auto;
+}
+
+/* Personaliza a barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1); /* Fundo leve na barra */
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.4); /* Cor do polegar */
+    border-radius: 6px;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.6); /* Cor ao passar o mouse */
+}
+
+/* Ajusta o layout para dispositivos menores */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .pesquisa input {
+        width: 60%;
+    }
+
+    .resultados-pesquisa {
+        height: 40vh;
+    }
+
+    .item-resultado h2 {
+        font-size: 1.3rem;
+    }
+}

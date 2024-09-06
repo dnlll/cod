@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Call of Duty - Warzone</title>
+</head>
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="images/fundo2.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos HTML5.
+    </video>
+
+    <header class="tarja">
+        <button id="home-button" onclick="window.location.href='index.html'">Home</button>
+        <h1>✪ CALL OF DUTY - WARZONE ✪</h1>
+    </header>
+
+    <main>
+        <section class="pesquisa">
+            <input type="text" id="input-nome" placeholder="Nome do Jogador">
+            <button type="submit" id="botao-pesquisar"><ion-icon name="search-outline"></ion-icon></button>
+        </section>
+        
+
+        <section class="noticias" id="secao-noticias">
+            <article class="noticia">
+                <h2>Torneio de Warzone - Nova Temporada!</h2>
+                <img src="images/torneio.jpg" alt="Torneio de Warzone">
+                <p>Confira todas as novidades e atualizações da nova temporada! <a href="link1.html">Leia mais</a></p>
+            </article>
+
+            <article class="noticia">
+                <h2>Atualização de Armas - Patch Notes</h2>
+                <img src="images/armas.jpg" alt="Atualização de Armas">
+                <p>Veja quais armas estão em destaque e como elas podem impactar suas partidas. <a href="link2.html">Leia mais</a></p>
+            </article>
+        </section>
+
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+            <!-- Resultados da pesquisa serão exibidos aqui -->
+        </section>
+    </main>
+
+    <footer>
+        <p>2024 - Call of Duty Warzone - Todos os Direitos Reservados</p>
+    </footer>
+
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
