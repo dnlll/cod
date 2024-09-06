@@ -13,7 +13,8 @@
         nome: 'ninext',
         sobre: 'Jogador conhecido por suas jogadas estratégicas e consistência.',
         redesSociais: {
-          twitch: 'https://www.twitch.tv/ninext'
+          twitch: 'https://www.twitch.tv/ninext',
+          youtube: 'https://www.youtube.com/@ninexTT'
         }
       },
       {
